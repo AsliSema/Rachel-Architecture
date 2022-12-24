@@ -1,0 +1,59 @@
+<!--Header Section-->
+<%- include ("partials/_header") -%>
+
+<body>
+
+  <!--Navigation Section-->
+  <%- include("partials/_navigation") -%>
+
+      <form method="POST" action="/signup" novalidate>
+        <div class="container"> <!--Sıgn Up Start-->
+          <div class="signUp non-active" id="sign_up">
+            <div>
+              <% if(flashMessages) { %>
+                <% if(flashMessages.success) { %>
+                  <div class="alert alert-success">
+                    <%= flashMessages.success %>
+            </div>
+      
+              <% } else if(flashMessages.error) { %>
+                    <div class="alert alert-danger">
+                      <%= flashMessages.error %>
+                    </div>
+              <% } %>
+              <% } %>
+            </div>
+        <span class="sign-span">Sign Up</span>
+        <div>
+          <label class="sign-label"><i class="fas fa-user"></i></label>
+          <input class="input-form" type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div>
+          <label class="sign-label"><i class="fas fa-envelope-open"></i></label>
+          <input class="input-form" type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+          <label class="sign-label"><i class="fas fa-lock"></i></label>
+          <input class="input-form" type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+          <input class="sign-submit" type="submit" value="Register">
+        </div>
+      </form>
+      <p class="sign-p">
+        Already a member? 
+        <button class="sign-button-in"><a class="sign-a" href="/signin">Sign In</a></button>
+      </p>
+    </div>
+  </div> <!--Sıgn Up End-->
+
+
+
+
+<!--Footer Section-->
+<%- include ("partials/_footer") -%>
+
+
+</body>
+
+</html>

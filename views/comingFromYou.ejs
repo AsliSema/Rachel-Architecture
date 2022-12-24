@@ -1,0 +1,64 @@
+<!--Header Section-->
+<%- include ("partials/_header") -%>
+
+  <body>
+
+    <!--Navigation Section-->
+    <%- include("partials/_navigation") -%>
+
+      <!--Navigation Section2-->
+      <%- include("partials/_navigation2") -%>
+
+
+        <!--Ask Us Part Start-->
+        <div class="container">
+
+          <% for(let i=0; i< showAskUs.length; i++) { %>
+
+            <div class="images-text">
+              <div class="">
+                <div class="ask-img">
+                  <img src="<%= showAskUs[i].askUsImage %>" width="300px" height="300px" alt="">
+                </div>
+              </div>
+
+
+              <div class="ask-text">
+                <div class="ask-us-title">
+                  <%= showAskUs[i].title %>
+                </div>
+                <p>
+                  <%= showAskUs[i].description %>
+                </p>
+                <% for(let j=0; j< showAskUs[i].answers.length; j++) { %>
+                <p style="text-align: right;">
+                  <%= showAskUs[i].answers[j].answer %>
+                </p>
+                <% } %>
+              </div>
+            </div>
+            <% } %>
+
+        </div>
+
+
+        <!--Ask Us Part End-->
+
+
+
+
+
+
+
+
+        <div class="bg-color">
+
+
+
+          <!--Footer Section-->
+          <%- include ("partials/_footer") -%>
+
+
+  </body>
+
+  </html>

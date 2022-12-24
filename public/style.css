@@ -1,0 +1,468 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Dongle', sans-serif;
+}
+.bg-color {
+    background-color:#1D372C;
+}
+
+.border-bottom {
+    border-bottom: #F0F2E4 solid 3px;
+}
+.navColor {
+    color: #F0F2E4 !important;
+    font-size: x-large !important;
+}
+
+.ra-image {
+    width: 5% ;
+    height: auto;
+    float: right;
+    margin-right: 0;
+}
+
+.photoRa-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    padding: auto;
+    padding-top: 2em;
+}
+
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: left;
+    line-height: initial !important;
+}
+
+footer {
+    color: #F0F2E4;
+    width: auto;
+    height: 5%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 5px auto;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 2em 0;
+}
+
+.socials li {
+    margin: 0 8px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #F0F2E4;
+}
+
+.socials a i {
+    font-size: 1.5em;
+}
+
+.socials a i:hover {
+    color: rgb(231, 224, 156);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0;
+    margin: auto;
+    width: auto;
+    height: 5%;
+}
+
+.footer-bottom p {
+    font-size: 20px;
+    word-spacing: 2.5px;
+    text-transform: capitalize;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+/* In Contact Page*/
+
+.first-paragraf {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 100px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #F0F2E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 23px;
+    margin-right: 5px;
+    color: #1D372C;
+}
+
+/* .bg-image {
+    margin-top: 0px;
+    background-image: url(photoRa2.jpg);
+    text-align: center;
+    background-size: cover;
+    opacity: 95%;
+    color: #F0F2E4;
+} */
+
+.h2-contact {
+    padding: 0px;
+    margin: 0px;
+    margin-left:25px;
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.p-contact {
+    padding: 0px;
+    margin: 0px; 
+    margin-left: 25px; 
+    line-height: 17px !important;
+    display: inline-block;
+}
+
+.icon-description{
+    margin-bottom: 80px;
+    margin-left: 20px;
+}
+
+.contact-form {
+    border-radius: 5px;
+    background-color: #f1f3e7 ;
+    padding: 50px 0px 100px;
+    display: block;
+    margin:auto 0px 150px auto;
+    text-align: center;
+}
+
+.input-box {
+    float: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 85%;
+}
+
+.input-text , textarea {
+    width: 85%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.submitButton {
+    float: right;
+    background-color: #1D372C;
+    text-decoration: none;
+    color: #F0F2E4;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    margin:25px 15%;
+    font-size: large;
+}
+
+@media screen and (max-width: 600px) {
+    .input-box, .col-75, .p-contact, .h2-contact, .icon, .icon-description {
+      width: 100%;
+      margin-top: 0;
+    }
+    .submitButton {
+        width: 100%;
+        margin: auto;
+    }
+  }
+
+/*Sign In Page*/
+
+.signIn, .signUp {
+    text-align: center;
+    inline-size: 50%;
+    max-inline-size: 23rem;
+    padding: 1.5rem;
+    background-color: #f1f3e7; 
+    margin: 10em auto;
+    border-radius: 0.5em;
+    display: block;
+}
+/* .signIn {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+}
+.sign-button-up{
+    padding-top: 1.5rem;
+} */
+
+/* Sign up sayfası artık başka sayfada açılıcak
+
+.non-active {
+    display: none;
+} */
+
+.sign-p {
+    display: inline-block ; 
+    align-items: center;
+    margin-block: 1.5em;
+    
+}
+
+.sign-span {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.input-form {
+    border-radius: 0.35em;
+    border-color: #1D372C;
+    padding: 0.70em;
+    float: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 75%;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0;
+}
+
+.sign-label {
+    background-color: #1D372C;
+    border-radius: 0.35em;
+    padding: 0.75em;
+    outline: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    color: #F0F2E4;
+}
+
+.sign-i {
+    block-size: 1em;
+    inline-size: 1em;
+    vertical-align: middle;
+}
+
+.sign-submit {
+    border: 0;
+    inline-size: 87%;
+    background-color: #1D372C ;
+    color: #F0F2E4;
+    padding: 0.35em;
+    cursor: pointer;
+    border-radius: 0.35em;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-top: 2em;
+}
+
+.sign-button-up, .sign-button-in {
+    background: transparent;
+    border: none;
+}
+
+.sign-a {
+    cursor: pointer;
+    outline: none ;
+    color: #1D372C;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 0.3em;
+}
+
+.sign-a:focus, .sign-a:hover {
+    color: #1D372C;
+}
+
+/* Our design Page */
+
+.dsgn-image{
+    display: none !important;
+    width: 100vh;
+}
+.active{
+    display: inline-block !important;
+}
+.design-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+    margin: 1.5rem auto;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    width: 1.5rem;
+    opacity: 35%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slide button, .ask-button{
+    color: black;
+    top: 50%;
+    opacity: 35%;
+}
+
+.next {
+    right: 0.93rem;
+    padding-top: 0.35rem;
+    padding-right: -0.95rem;
+}
+
+.prev {
+    padding-top: 0.35rem;
+    padding-right: -0.95rem;
+}
+
+.slide:disabled{
+    cursor: not-allowed;
+}
+
+.fullscreen-btn {
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 6px 9px 0px;
+    position: absolute;
+    cursor:pointer;
+    /* top: 24px;
+    right:15px; */
+    right: 0.96rem;
+    top:1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+/* 
+After FullScreen button
+.display-image{
+    display: contents;
+    flex-flow: column nowrap;
+    justify-content: center;
+    flex-basis: 100%;
+    border: 2px solid purple !important;
+    cursor:pointer;
+    box-sizing: content-box;
+    width: 400px !important;
+    width: auto !important;
+    right:0;
+} */
+
+.images-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: left;
+    flex-wrap: nowrap;
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+.ask-text{
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    flex-basis: 55%;
+}
+
+.ask-us-title{
+    font-size: 2rem;
+    color: #1D372C;
+}
+
+/* Ask Us Page */
+
+.ask-us-form {
+    border-radius: 5px;
+    background-color: #f1f3e7 ;
+    display: block;
+    margin: 30px auto 100px;
+    padding:20px 0px 100px;
+    align-items: center;
+}
+input[type=file]{
+    padding-left: 0;
+    margin-left: -45%;
+}
+
+input[type=file]::file-selector-button {
+    float: left;
+    background-color: #1D372C;
+    text-decoration: none;
+    color: #F0F2E4;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 20px auto auto 0;
+    border: none;
+    font-size: large;
+}
+
+.ask-us-user{
+    color: #F0F2E4;
+    padding:0 auto 50px auto;
+    margin-top: -30px;
+}
+
+.ask-us-user-h1 {
+    font-size: 2rem;
+    font-style: italic;
+}

@@ -1,0 +1,62 @@
+<!--Header Section-->
+<%- include ("partials/_header") -%>
+
+  <body>
+
+    <!--Navigation Section-->
+    <%- include("partials/_navigation") -%>
+
+      <!--Navigation Section2-->
+      <%- include("partials/_navigation2") -%>
+
+
+        <!--Ask Us Part Start-->
+        <div class="container">
+
+          <% for(let i=0; i< showAskUs.length; i++) { %>
+
+            <div class="images-text">
+              <div class="">
+                <div class="ask-img">
+                  <img src="<%= showAskUs[i].askUsImage %>" width="300px" height="300px" alt="">
+                </div>
+              </div>
+              <div class="ask-text">
+                <div class="ask-us-title">
+                  <%= showAskUs[i].title %>
+                </div>
+                <p>
+                  <%= showAskUs[i].description %>
+                </p>
+
+
+                <div>
+                  <form method="POST" action="/answerAskUs">
+                    <input type="hidden" name="postId" value="<%= showAskUs[i].id %>">
+                    <div class="">
+                      <textarea style="height: 100px;" name="answer" required="required"
+                        placeholder="Reply to this post..."></textarea>
+                    </div>
+                    <div class="">
+                      <input class="submitButton" type="submit" value="Send">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <% } %>
+
+        </div>
+
+        <!--Ask Us Part End-->
+
+        <div class="bg-color">
+
+          <!--Footer Section-->
+          <%- include ("partials/_footer") -%>
+
+
+  </body>
+
+  </html>

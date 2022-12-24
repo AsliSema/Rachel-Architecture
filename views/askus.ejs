@@ -1,0 +1,45 @@
+<!--Header Section-->
+<%- include ("partials/_header") -%>
+
+
+<body>
+<!--Navigation Section-->
+<%- include("partials/_navigation") -%>
+
+<div class="bg-color">
+  <div class="container">
+      <img class="photoRa-image" src="photoRa.jpg" alt="">
+  </div>
+  <div class="ask-us-user"><h1 class="ask-us-user-h1">Welcome <%= user.name %></h1></div>
+</div>  
+
+<div class="row">
+    <div class="col-sm-6 ask-us-form">
+        <form method="POST" action="/comingFromYou" style="text-align: center" encType="multipart/form-data">
+          <h2>ASK US</h2>
+          <div class="input-box">
+            <input class="input-text" type="text" name="title" required="required" placeholder="Title">
+          </div>
+          <div class="input-box">
+            <textarea style="height: 100px;" name="description" required="required" placeholder="Description"></textarea>
+          </div>
+          <div class="">
+            <input class="" type="file" name="askUsImage" value="Choose file" required="required">
+          </div>
+          <div class="">
+            <input  class="submitButton" type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+</div>
+
+
+
+  
+<!--Footer Section-->
+<%- include ("partials/_footer") -%>
+
+
+
+</body>
+</html>

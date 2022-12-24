@@ -1,0 +1,57 @@
+<!--Header Section-->
+<%- include ("partials/_header") -%>
+
+<body>
+
+  <!--Navigation Section-->
+  <%- include("partials/_navigation") -%>
+
+  <div class="container">  <!--Sıgn In Start-->
+    <div class="signIn" id="sign_in">
+      <div>
+        <% if(flashMessages) { %>
+          <% if(flashMessages.success) { %>
+            <div class="alert alert-success">
+              <%= flashMessages.success %>
+            </div>
+      
+            <% } else if(flashMessages.error) { %>
+              <div class="alert alert-danger">
+                <%= flashMessages.error %>
+              </div>
+              <% } %>
+                <% } %>
+      </div>
+      <form method="POST" action="/signin">
+        <span class="sign-span">Sign In</span>
+        <div>
+          <label class="sign-label"><i class="fas fa-user sign-i"></i></label>
+          <input class="input-form" type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+          <label class="sign-label"><i class="fas fa-lock"></i></label>
+          <input class="input-form" type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+          <input class="sign-submit" type="submit" value="Log In">
+        </div>
+      </form>
+      <p class="sign-p">
+        Not a member? 
+        <button class="sign-button-up"><a class="sign-a" href="/signup">Sign Up</a></button>
+      </p>
+    </div>
+  </div>  <!--Sıgn In End-->
+
+
+
+
+
+
+<!--Footer Section-->
+<%- include ("partials/_footer") -%>
+  
+<!-- <script src = signup.js> </script>-->
+</body>
+
+</html>
